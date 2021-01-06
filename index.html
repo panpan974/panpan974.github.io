@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="dist/stylesheet.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale:1.0">
+        <link rel="icon" href="svg/Logo_1.svg">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet"> 
+        <meta name="robots" content="noindex,nofollow">
+
+    <title>Générateur de Mots Aléatoires</title>
+    <meta name="description" content="Besoin d'un mot aléatoire inexistant? Le Générateur est fait pour ça! Pour tous ceux en manque d'inspiration pour les mots.">
+    <link rel="canonical" href="http://www.abrilletalison.fr/WordGen/index.html">
+    <meta name="Language" CONTENT="fr" />    
+</head>
+    <body>
+        <header>
+            <h1>Générateur de mots aléatoires</h1>
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 440.67 453.65"><path d="M420.23,0,261.65,267.51l-35.4-75.66H214.19l-35.37,75.33L20.44,0H0V453.44H22.35V44.71l145.57,245.7L91.27,453.65h15.27l41.81-87.34H292.09l41.81,87.34h14.87L272.54,290.77,418.32,44.71V453.44h22.35V0Zm-200,208.07,33.62,72.62-33.51,56.52L186.7,280.47Zm-44.34,95.78,28.67,48.4H153.47ZM287,352.25H236.11l28.55-48.19Z" fill="#ffffff"/></svg>
+            <p>Vous pouvez créer votre mot aléatoire ! C'est pas beau la vie ?</p>
+        </header>
+
+        <pre class="result" id="wordDisplay"><h2></h2></pre>
+        
+
+        <div class="generateMachine">
+            <form>
+                <div>
+                    <label for="nbMots">Nombre de mots à générer ? </label>
+                    <input value="1" type="text" name="nbMots" maxlength = "1" autocomplete="off" placeholder="Indiquez ici le nombre de mots à générer.">
+                    <div class="prevent nbMots"> <p>Merci de mettre un chiffre.</p></div>
+                </div>
+                
+                <div>
+                    <label for="nbMots">Longueur du mot ? </label>
+                    <input value="4" type="text" name="nbLetters" maxlength = "1" autocomplete="off" placeholder="Indiquez ici la longueur du mot.">
+                    <div class="prevent nbLetters"> <p>Merci de mettre un chiffre.</p></div>
+                </div>
+                
+                
+                <div>
+                    <label for="nbMots">Nombre de voyelles qui peuvent se suivre ? </label>
+                    <input value="1" type="text" name="nbVoyelles" maxlength = "1" autocomplete="off" placeholder="Indiquez ici le nb. de voyelles qui peuvent se suivre.">
+                    <div class="prevent nbVoyelles"> <p>Merci de mettre un chiffre.</p></div>
+                </div>
+                
+                <div>
+                    <label for="nbMots">Nombre de consonnes qui peuvent se suivre ? </label>
+                    <input value="1" type="text" name="nbConsonnes" maxlength = "1" autocomplete="off" placeholder="Indiquez ici le nb. de consonnes qui peuvent se suivre.">
+                    <div class="prevent nbConsonnes"> <p>Merci de mettre un chiffre.</p></div>
+                </div>
+                
+                
+                <button type="submit">Générer mon mot</button>
+    
+            </form>
+
+        </div>
+        
+
+        <div class="prevent allChamps"><p>Veuillez remplir tous les champs.</p></div>
+
+        
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
