@@ -1,0 +1,105 @@
+//Colooors
+$vert_fonce:#68b0ab;
+$vert_clair:#8fc0a9;
+$vert_jaune:#c8d5b9;
+$jaune:#faf3dd;
+
+html{//height:100%;
+}
+
+html,body{  
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color:$vert_fonce;
+    overflow:auto;
+    height:100%;
+}
+
+header{
+    h1{
+        text-transform: uppercase;
+       
+        line-height:4rem;
+    }
+    p{
+        font-weight:400;
+        font-style:italic;
+    }
+
+    text-align: center;
+    
+    padding:10px 0 0 10px;
+
+}
+
+/*MAx-width !a s'appelle un point de ruptre*/
+/*On mets all masi ça peut être spécifique à certains, handheld pour les mains par exemple*/
+@media all and (max-width:  900px){
+	header{
+        padding:0;
+        height:100%;
+    }
+
+}
+
+
+.generateMachine{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    form div{
+        border:1px white solid;
+        padding:5px;
+        margin:20px;
+
+        label{
+            margin-left:50px;
+            margin-right:50px;
+        }
+        input{
+            border:none;
+        }
+    }
+
+    form button{
+        color:$vert_fonce;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding:20px;
+        width:500px;
+        border:none;
+        border-radius:50px;
+        margin:auto;
+        display:block;
+        
+    }
+    
+    
+
+}
+
+.prevent{
+    color:red;
+    visibility: hidden;
+    display:none;
+
+    &.visible{
+        visibility: visible;
+        display: block;
+    }
+}
+
+#wordDisplay{
+    margin:0;
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+    border: 1px white;
+    font-size:3em;
+}
+
