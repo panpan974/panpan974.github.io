@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+    //va dire la data qui va être drag. Ici, ça va être une data de type "text" et l'id sera "drag1"
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    //Par défaut on peut pas dragger, donc on doit prevent default d'baord.
+  ev.preventDefault();
+  //On va récupérer l'id de ce qui a été drag
+  var data = ev.dataTransfer.getData("text");
+  //et on va le mettre en child.
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+<!--ondragover c'est où on peut le drag
+ondrop c'est qunad on fait glisser un truc
+-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" background-color="red" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<div id="drag2"background-color="red" draggable="true" ondragstart="drag(event)" width="336" height="69">DÉPLACER MOI</div>
+</body>
+</html>

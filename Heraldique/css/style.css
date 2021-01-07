@@ -1,3 +1,39 @@
-body {
+.fixed {
+  position: fixed;
+  right: 40vw;
+}
+
+.bouclier {
+  border: 4px solid black;
+}
+.bouclier svg {
+  position: absolute;
+  z-index: 0;
+  left: -43px;
+}
+.bouclier .clickBox {
+  position: absolute;
+  z-index: 1;
+}
+.bouclier .clickBox.gauche {
+  width: 154px;
+  height: 396px;
+}
+.bouclier .clickBox.droite {
+  width: 154px;
+  height: 396px;
+  right: -29vw;
+}
+
+.colors #rouge {
   background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.colors #bleu {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 }

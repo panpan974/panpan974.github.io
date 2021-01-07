@@ -1,3 +1,51 @@
-body{
-    background-color:red;
+
+.fixed{
+    position:fixed;
+    right:40vw;
+}
+
+.bouclier{
+    border:4px solid black;
+
+    svg{
+        position:absolute;
+        z-index: 0;
+        left:-43px;
+    }
+
+    .clickBox {
+        position:absolute;
+        z-index:1;
+        &.gauche{
+            width: 154px;
+            height:396px;
+
+            //background-color: rgba(0,0,0,0.5);
+    
+        }
+
+        &.droite{
+            width: 154px;
+            height:396px;
+            right:-29vw;
+            //background-color: rgba(255,0,0,0.5);
+        }
+    }
+    
+}
+
+.colors{
+    
+    #rouge{
+        background-color: red;
+        width:50px;
+        height:50px;
+        border-radius:50px;
+    }
+    #bleu{
+        background-color: blue;
+        width:50px;
+        height:50px;
+        border-radius:50px;
+    }
 }
