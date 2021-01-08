@@ -1,14 +1,4 @@
-
-
-
-document.querySelector(".rouge").addEventListener("click",function(){
-    document.querySelector("#droit").style.fill="red";
-})
-
-
-document.querySelector(".bleu").addEventListener("click",function(){
-    document.querySelector("#droit").style.fill="blue";
-})
+document.querySelector(".btn.recentFR").Add
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
@@ -24,7 +14,6 @@ function allowDrop(ev) {
     //faudrait récupérer la classe de la zone.
     console.log(ev.target.className);
 
-    
     //data contient l'id de ce qui a été drag.
     var data = ev.dataTransfer.getData("text");
     //ev.target.appendChild(document.getElementById(data));
@@ -32,7 +21,6 @@ function allowDrop(ev) {
     //On va regarder c'est quelle zone.
     switch(classeZone){
         case "clickBox gauche":
-            console.log("YAY");
             VerifyColor('#gauche',data);
             break;
 
@@ -41,7 +29,6 @@ function allowDrop(ev) {
             VerifyColor("#droit",data);
         default: "oh no";
     }
-
   }
 
 function VerifyColor(classeZone,data){

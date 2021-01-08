@@ -1,11 +1,6 @@
 "use strict";
 
-document.querySelector(".rouge").addEventListener("click", function () {
-  document.querySelector("#droit").style.fill = "red";
-});
-document.querySelector(".bleu").addEventListener("click", function () {
-  document.querySelector("#droit").style.fill = "blue";
-});
+document.querySelector(".btn.recentFR").Add;
 
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
@@ -26,7 +21,6 @@ function drop(ev) {
 
   switch (classeZone) {
     case "clickBox gauche":
-      console.log("YAY");
       VerifyColor('#gauche', data);
       break;
 
