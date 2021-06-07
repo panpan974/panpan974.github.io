@@ -1,0 +1,9 @@
+h2 {
+  background: url(../img/news/hn_title.gif) no-repeat top left;
+}
+
+#nenpyo dl {
+  background: url(../../../sachimayu/history/img/hr_line.gif) repeat-y;
+  display: block;
+  width: 550px;
+}

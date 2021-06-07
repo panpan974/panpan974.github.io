@@ -1,0 +1,13 @@
+.part {
+  position: relative;
+  vertical-align: middle;
+}
+
+.part:before {
+  content: "";
+  background: url(../img/hr_bo.gif) no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+}
