@@ -1,3 +1,10 @@
+@charset "utf-8";
+
+/* main
+--------------------------------------------------------------*/
+h2  {
+	background:url(../img/nyoah/hn_title.gif) no-repeat top left;
+}
 
 
 #ContBox {
@@ -32,6 +39,7 @@
 	left:670px;
 	
 }
+
 
 
 .nyoaBo {
@@ -79,7 +87,7 @@
 
 #nav a#backnumber {
 	text-indent:-9999px;
-	background:url(../img/btn_backnumber.gif) no-repeat;
+	background:url(../img/nyoah/btn_backnumber.gif) no-repeat;
 	height:13px;
 	font-size:1px;
 	padding:0;
@@ -104,3 +112,4 @@
 a#TB_closeWindowButton  {
 	color:#FFFFFF;
 }
+
