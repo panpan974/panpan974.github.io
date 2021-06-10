@@ -1,0 +1,106 @@
+
+
+#ContBox {
+	background: url(../../common/img/bg_main2.gif)  no-repeat top left;
+}
+
+
+#mainTitleBox {
+	margin:0 0 0 0;
+	padding:0;
+	height:18px;
+	position:relative;
+	z-index:2;
+
+}
+
+
+#mainInnerBox{
+	margin:5px 0 0 0;
+	height:450px;
+	z-index:1;
+}
+
+#wrapper {
+	position:relative;
+	z-index:1;
+}
+
+#nyoaImg {
+	position:absolute;
+	top:339px;
+	left:670px;
+	
+}
+
+
+.nyoaBo {
+	background:url(../../common/img/hr_bo.gif) top left no-repeat;
+	display:block;
+	width:450px;
+	margin:20px 0 0 0;
+	padding:3px 0 0 0;
+	text-align:right;
+}
+
+.nyoaTitle {
+	margin:20px 0 0 30px;
+}
+
+.nyoaBox {
+	margin:0 0 0 0;
+	padding:10px 0 0 0;
+	width:450px;
+}
+
+
+/* menu custom---------------------*/
+
+/* Essentials - configure this */
+
+#nav ul { width: 118px; }
+#nav ul ul { left: 120px; border-top: 1px solid #2e0e08; }
+
+#nav { background-color: #2e0e08;
+	height: 13px;
+	width:118px;
+	position:absolute;
+	top:7px;
+	left:510px; }
+#nav *:hover { background-color: none; }
+#nav a { border-right: none; color: #dac88e; font-size: 12px; padding: 2px 4px; line-height: 1; width:110px; text-decoration:none; }
+  #nav li.hover a { background-color: #dac88e; color:#2e0e08; }
+  #nav ul { top: 13px; border-right: 1px solid #2e0e08; border-left: 1px solid #2e0e08; }
+    #nav ul li a { background-color: #dac88e;  color:#2e0e08; }
+      #nav ul a.hover { background-color: #2e0e08; color:#FFFFFF; }
+   #nav ul a { border-bottom: 1px solid #2e0e08; opacity: 0.9; filter: alpha(opacity=90); }
+/* #nav ul a { border-bottom: none; } - I also needed this for IE6/7 */
+
+
+#nav a#backnumber {
+	text-indent:-9999px;
+	background:url(../img/btn_backnumber.gif) no-repeat;
+	height:13px;
+	font-size:1px;
+	padding:0;
+	width:120px;
+}
+
+
+#TB_title {
+	background-color:#543222;
+}
+
+#TB_window a:link{
+	color:#FFFFFF;
+}
+
+
+#TB_window a:hover{
+	color:#FFFFFF;
+}
+
+
+a#TB_closeWindowButton  {
+	color:#FFFFFF;
+}

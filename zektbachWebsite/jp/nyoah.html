@@ -1,79 +1,594 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="BEMANIシリーズで活躍中のZektbach公式サイト。幻想的で謎に溢れた一連の作品はゼクトバッハ叙事詩と称されている。Zektbachによる主な作品に「Apocalypse 〜dirge of swans〜」「Blind Justice 〜Torn souls, Hurt Faiths〜」「Ristaccia」等。">
-        <meta name="keywords" content="Zektbach,ゼクトバッハ,ゼクトバッハ叙事詩,BEMANI,ビーマニ,Ristaccia,the epic of Zektbach,KONAMI,コナミ,IIDX,素数の世界と超越者,Apocalypse,マタン,アンネース,リスタチア,Blind Justice,BMF,i-revo,アイレボ">
-        <title>The Epic of Zektbach / Story</title>
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <link href="css/common.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP:wght@200;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-        <link href="css/storyJap.css" rel="stylesheet">
-    </head>
-    <body>
-        <!--BEMANI header-->
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav>
-                            <ul id="bemaniMenu">
-                                <li><a href="http://mp.i-revo.jp/">マイポータル</a></li>
-                                <li><a href="http://access.i-revo.jp/">アクセス</a></li>
-                                <li><a href="http://help.i-revo.jp/">ヘルプ</a></li>
-                                <li><a href="http://www.i-revo.jp/">i-revoトップ</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
 
-        <!--Content-->
-        <div>
-            <div class="container">
-                <!--Menu-->
-                <div class="row">
-                    <div class="col-12">
-                        <div id="background"></div>
-                        <header>
-                            <nav>
-                                <ul id="mainMenu">
-                                    <li><a href="news.html">News</a></li>
-                                    <li><a href="introduction.html">Introduction</a></li>
-                                    <li><a href="story.html">Story</a></li>
-                                    <li><a href="nyoah.html">ニョアの手記</a></li>
-                                    <li><a href="mail.html">伝書鳩</a></li>
-                                    <li><a href="index.html">Top</a></li>
-                                </ul>
-                            </nav>
-                        </header>
-                    </div>
-                </div>
-                <!--Le contenu de la div-->
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Story</h2>
-                        <div id="mainBox"></div>
-                    </div>
-                </div>
-                <!--bottomMenu-->
-                <div class="row">
-                    <div class="col-12">
-                        <footer id="mainFooter">
-                            <div class="newsBox"><a href="http://www.konamistyle.jp/sp/zektbach_2nd/"><img src="img/bnr_album.gif" alt="The Epic of Zektbach -FRAGMENTS OF ARIA TE'LARIA-"></a></div>
-                            <div class="alignRight">
-                                <p>Music <span id="musicOn" class="active">On</span>/<span id="musicOff">Off</span></p>
-                                <p style="font-size:10px;">©2021 Konami Digital Entertainment ©2021 Internet Revolution</p>
-                            </div>
-                            
-                        </footer>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="BEMANIシリーズで活躍中のZektbach公式サイト。幻想的で謎に溢れた一連の作品はゼクトバッハ叙事詩と称されている。Zektbachによる主な作品に「Apocalypse 〜dirge of swans〜」「Blind Justice 〜Torn souls, Hurt Faiths〜」「Ristaccia」等。">
+    <meta name="keywords"
+        content="Zektbach,ゼクトバッハ,ゼクトバッハ叙事詩,BEMANI,ビーマニ,Ristaccia,the epic of Zektbach,KONAMI,コナミ,IIDX,素数の世界と超越者,Apocalypse,マタン,アンネース,リスタチア,Blind Justice,BMF,i-revo,アイレボ">
+    <title>The Epic of Zektbach / Story</title>
+    <link rel="shortcut icon" href="img/news/favicon.ico">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/news.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="css/nyoah.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--BEMANI header-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav>
+                        <ul id="bemaniMenu">
+                            <li><a href="http://mp.i-revo.jp/">マイポータル</a></li>
+                            <li><a href="http://access.i-revo.jp/">アクセス</a></li>
+                            <li><a href="http://help.i-revo.jp/">ヘルプ</a></li>
+                            <li><a href="http://www.i-revo.jp/">i-revoトップ</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="js/mainJS.js"></script>
-    </body>
+    </header>
+
+    <!--Content-->
+    <div>
+        <div class="container">
+            <div id="background"></div>
+            <!--Menu-->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <header>
+                        <nav>
+                            <ul id="mainMenu">
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="introduction.html">Introduction</a></li>
+                                <li><a href="story.html">Story</a></li>
+                                <li><a href="nyoah.html">ニョアの手記</a></li>
+                                <li><a href="mail.html">伝書鳩</a></li>
+                                <li><a href="index.html">Top</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+            <!--Le contenu de la div-->
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-9">
+                    <h2>News</h2>
+                    <ul id="nav">
+                        <li><a href="#" id="backnumber">backnumber</a>
+                            <ul>
+                                <li><a href="index.html">ニョアの手記 98</a></li>
+                                <li><a href="nyoa_97.html">ニョアの手記 97</a></li>
+                                <li><a href="nyoa_96.html">ニョアの手記 96</a></li>
+                                <li><a href="nyoa_95.html">ニョアの手記 95</a></li>
+                                <li><a href="nyoa_94.html">ニョアの手記 94</a></li>
+                                <li><a href="nyoa_93.html">ニョアの手記 93</a></li>
+                                <li><a href="nyoa_92.html">ニョアの手記 92</a></li>
+                                <li><a href="nyoa_91.html">ニョアの手記 91</a></li>
+                                <li><a href="nyoa_90.html">ニョアの手記 90</a></li>
+                                <li><a href="nyoa_89.html">ニョアの手記 89</a></li>
+                                <li><a href="nyoa_88.html">ニョアの手記 88</a></li>
+                                <li><a href="nyoa_87.html">ニョアの手記 87</a></li>
+                                <li><a href="nyoa_86.html">ニョアの手記 86</a></li>
+                                <li><a href="nyoa_85.html">ニョアの手記 85</a></li>
+                                <li><a href="nyoa_84.html">ニョアの手記 84</a></li>
+                                <li><a href="nyoa_83.html">ニョアの手記 83</a></li>
+                                <li><a href="nyoa_82.html">ニョアの手記 82</a></li>
+                                <li><a href="nyoa_81.html">ニョアの手記 81</a></li>
+                                <li><a href="#">ニョアの手記 71～80</a>
+                                    <ul>
+                                <li><a href="nyoa_80.html">ニョアの手記 80</a></li>
+                                <li><a href="nyoa_79.html">ニョアの手記 79</a></li>
+                                <li><a href="nyoa_78.html">ニョアの手記 78</a></li>
+                                <li><a href="chaco_1.html">チャコルの手記 1</a></li>
+                                <li><a href="nyoa_77.html">ニョアの手記 77</a></li>
+                                <li><a href="nyoa_76.html">ニョアの手記 76</a></li>
+                                <li><a href="nyoa_75.html">ニョアの手記 75</a></li>
+                                <li><a href="nyoa_74.html">ニョアの手記 74</a></li>
+                                <li><a href="nyoa_73.html">ニョアの手記 73</a></li>
+                                <li><a href="nyoa_72.html">ニョアの手記 72</a></li>
+                                <li><a href="nyoa_71.html">ニョアの手記 71</a></li>
+                                    </ul>
+                                <li><a href="#">ニョアの手記 61～70</a>
+                                    <ul>
+                                <li><a href="nyoa_70.html">ニョアの手記 70</a></li>
+                                <li><a href="nyoa_69.html">ニョアの手記 69</a></li>
+                                <li><a href="nyoa_68.html">ニョアの手記 68</a></li>
+                                <li><a href="nyoa_67.html">ニョアの手記 67</a></li>
+                                <li><a href="nyoa_66.html">ニョアの手記 66</a></li>
+                                <li><a href="nyoa_65.html">ニョアの手記 65</a></li>
+                                <li><a href="nyoa_64.html">ニョアの手記 64</a></li>
+                                <li><a href="nyoa_63.html">ニョアの手記 63</a></li>
+                                <li><a href="nyoa_62.html">ニョアの手記 62</a></li>
+                                <li><a href="nyoa_61.html">ニョアの手記 61</a></li>
+                                    </ul>
+                                <li><a href="#">ニョアの手記 51～60</a>
+                                    <ul>
+                                    <li><a href="nyoa_60.html">ニョアの手記 60</a></li>
+                                    <li><a href="nyoa_59.html">ニョアの手記 59</a></li>
+                                    <li><a href="nyoa_58.html">ニョアの手記 58</a></li>
+                                    <li><a href="nyoa_57.html">ニョアの手記 57</a></li>
+                                    <li><a href="nyoa_56.html">ニョアの手記 56</a></li>
+                                    <li><a href="nyoa_55.html">ニョアの手記 55</a></li>
+                                    <li><a href="nyoa_54.html">ニョアの手記 54</a></li>
+                                    <li><a href="nyoa_53.html">ニョアの手記 53</a></li>
+                                    <li><a href="nyoa_52.html">ニョアの手記 52</a></li>
+                                    <li><a href="nyoa_51.html">ニョアの手記 51</a></li>
+                                    </ul>
+                                <li><a href="#">ニョアの手記 41～50</a>
+                                    <ul>
+                                    <li><a href="nyoa_50.html">ニョアの手記 50</a></li>
+                                    <li><a href="nyoa_49.html">ニョアの手記 49</a></li>
+                                    <li><a href="nyoa_48.html">ニョアの手記 48</a></li>
+                                    <li><a href="nyoa_47.html">ニョアの手記 47</a></li>
+                                    <li><a href="nyoa_46.html">ニョアの手記 46</a></li>
+                                    <li><a href="nyoa_45.html">ニョアの手記 45</a></li>
+                                    <li><a href="nyoa_44.html">ニョアの手記 44</a></li>
+                                    <li><a href="nyoa_43.html">ニョアの手記 43</a></li>
+                                    <li><a href="nyoa_42.html">ニョアの手記 42</a></li>
+                                    <li><a href="nyoa_41.html">ニョアの手記 41</a></li>
+                                    </ul>
+                                <li><a href="#">ニョアの手記 31～40</a>
+                                    <ul>
+                                    <li><a href="nyoa_40.html">ニョアの手記 40</a></li>
+                                    <li><a href="nyoa_39.html">ニョアの手記 39</a></li>
+                                    <li><a href="nyoa_38.html">ニョアの手記 38</a></li>
+                                    <li><a href="nyoa_37.html">ニョアの手記 37</a></li>
+                                    <li><a href="nyoa_36.html">ニョアの手記 36</a></li>
+                                    <li><a href="nyoa_35.html">ニョアの手記 35</a></li>
+                                    <li><a href="nyoa_34.html">ニョアの手記 34</a></li>
+                                    <li><a href="nyoa_33.html">ニョアの手記 33</a></li>
+                                    <li><a href="nyoa_32.html">ニョアの手記 32</a></li>
+                                    <li><a href="nyoa_31.html">ニョアの手記 31</a></li>
+                                    </ul>
+                                <li><a href="#">ニョアの手記 21～30</a>
+                                    <ul>
+                                    <li><a href="nyoa_30.html">ニョアの手記 30</a></li>
+                                    <li><a href="nyoa_29.html">ニョアの手記 29</a></li>
+                                    <li><a href="nyoa_28.html">ニョアの手記 28</a></li>
+                                    <li><a href="nyoa_27.html">ニョアの手記 27</a></li>
+                                    <li><a href="nyoa_26.html">ニョアの手記 26</a></li>
+                                    <li><a href="nyoa_25.html">ニョアの手記 25</a></li>
+                                    <li><a href="nyoa_24.html">ニョアの手記 24</a></li>
+                                    <li><a href="nyoa_23.html">ニョアの手記 23</a></li>
+                                    <li><a href="nyoa_22.html">ニョアの手記 22</a></li>
+                                    <li><a href="nyoa_21.html">ニョアの手記 21</a></li>
+                                    </ul>
+                                <li><a href="#">ニョアの手記 11～20</a>
+                                    <ul>
+                                    <li><a href="nyoa_20.html">ニョアの手記 20</a></li>
+                                    <li><a href="nyoa_19.html">ニョアの手記 19</a></li>
+                                    <li><a href="nyoa_18.html">ニョアの手記 18</a></li>
+                                    <li><a href="nyoa_17.html">ニョアの手記 17</a></li>
+                                    <li><a href="nyoa_16.html">ニョアの手記 16</a></li>
+                                    <li><a href="nyoa_15.html">ニョアの手記 15</a></li>
+                                    <li><a href="nyoa_14.html">ニョアの手記 14</a></li>
+                                    <li><a href="nyoa_13.html">ニョアの手記 13</a></li>
+                                    <li><a href="nyoa_12.html">ニョアの手記 12</a></li>
+                                    <li><a href="nyoa_11.html">ニョアの手記 11</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">ニョアの手記 1～10</a>
+                                    <ul>
+                                    <li><a href="nyoa_10.html">ニョアの手記 10</a></li>
+                                    <li><a href="nyoa_09.html">ニョアの手記 9</a></li>
+                                    <li><a href="nyoa_08.html">ニョアの手記 8</a></li>
+                                    <li><a href="nyoa_07_5.html">ニョアの手記 7,5</a></li>
+                                    <li><a href="nyoa_07.html">ニョアの手記 7</a></li>
+                                    <li><a href="nyoa_06.html">ニョアの手記 6</a></li>
+                                    <li><a href="nyoa_05.html">ニョアの手記 5</a></li>
+                                    <li><a href="nyoa_04.html">ニョアの手記 4</a></li>
+                                    <li><a href="nyoa_03.html">ニョアの手記 3</a></li>
+                                    <li><a href="nyoa_02.html">ニョアの手記 2</a></li>
+                                    <li style="border:none;"><a href="nyoa_01.html">ニョアの手記 1</a></li>
+                                            </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <script type='text/javascript'>
+                        $(function() {
+                          $('#nav').droppy();
+                        });
+                      </script><!-- #EndLibraryItem -->
+
+                    <div id="mainInnerBox">
+                        <p>冒険者諸君、ごきげんよう。<br />
+                            <br />
+                            またまた更新が久しぶりとなってしまったが、<br />
+                            私がいるアリア・テ・ラリアの世界は確実に時を刻んでいる。<br />
+                            <br />
+                            何しろ君達とこの場所を繋ぐ扉が不安定で、なかなか様子を伝えられないが<br />
+                            冒険者諸君が日々頑張っているのと同様に、私も頑張るにゃ。<br />
+                            <br />
+                            オトナノジジョウはあまえにゃ――ニョア語録２２より<br />
+                            <br />
+                            さて、前回の手記でアリア・テ・ラリアと君達の世界を繋ぐ<br />
+                            新たな扉となり得る不思議な場所<br />
+                            ついったーについて書いたところ、諸君より下記の様に書簡を数多く頂いた。<br />
+                            <br />
+                            <strong>Twitterの件ですが、やって頂きたいです！<br />
+                            「Zektbach」のアカウント名は今なら取得できるようで<br />
+                            すので、ぜひお願いします！<br />
+                            (冒険者マナより)<br />
+                            <br />
+                            ニョアさんこんにちは。<br />
+                            以前「ついったー」なるものに興味を示しておられましたが、もしそれを始めるのならその時は「なう」<br />
+                            より「にゃう」という言葉を広めていただけると嬉しいにゃう。<br />
+                            (元老院ゴランノス・ポンサーより)<br />
+                            <br />
+                            ニョア殿、Zektbach殿こんにちは、初めまして<br />
+                            「ついったーにアリア・テ・ラリアから扉を開く件」についてそれは良い考えだ！と思い、鳩を飛ばした次第です<br />
+                            自分はついったーに登録はしていないのですが、この様な話が実現するようであればぜひ始めるきっかけにしたいと思います<br />
+                            もっとアリア・テ・ラリアの情報を多く知りたいので実現を期待しております<br />
+                            (魔道士シキセナより)<br />
+                            <br />
+                            こんにちは<br />
+                            先日は質問にご回答いただきありがとうございました。<br />
+                            さて、「ツイッター」の件ですが、ぜひとも公開していただきたいです。<br />
+                            貴殿の叙述詩は奥深く、楽しいものなので「ツイッター」で聴けることを楽しみにしています。<br />
+                            (冒険者kirikoより)</strong><br />
+                            <br />
+                            などなど、他にも多くの冒険者からこの事について沢山の書簡を頂いた。<br />
+                            <br />
+                            ということで、<br />
+                            <br />
+                            ついったーはじめたにゃ（'ω'*)<br />
+                            <br />
+                            いや、厳密に言うと、はじめてたにゃ！(^ω^*)＞<br />
+                            <br />
+                            <a href="http://twitter.com/Zekt_Official" target="_blank">http://twitter.com/Zekt_Official</a><br />
+                            <br />
+                            これからは、ここでゼクトバッハ叙事詩に関するあれこれを私がつぶやいていくにゃう。<br />
+                            また、叙事詩について、アリア・テ・ラリアに関する様々な疑問、答えられるものならば出来る限り答えていこうと思うので<br />
+                            これからはこの新しい扉もよろしくにゃ。<br />
+                            <br />
+                            さて、他にも冒険者諸君より多くの伝書鳩が届いているので<br />
+                            今回は多めに紹介するにゃ！<br />
+                            <br />
+                            では、いくにゃ！<br />
+                            <br />
+                            <strong>こんにちはニョアさん。私は海賊のイザベラ。<br />
+                            皆からはもっと野蛮になれみたいなこと言われてます。<br />
+                            さて、ここからが本題ですが、ニッポンという国では、人々たちが一丸となって頑張っています。<br />
+                            ニョアさんは頑張っている人たちを見るとどのような気分になりますか？<br />
+                            私は応援したくなります。あと、最近宝がなかなか取れません。<br />
+                            (海賊イザベラより)</strong><br />
+                            <br />
+                            勿論、私もアリア・テ・ラリアから日々応援しているにゃ！<br />
+                            何事でも、逆風に負けずに頑張っている姿は素晴らしいものである。<br />
+                            宝が取れないのは、現在アリア・テ・ラリアのほとんどのお宝がトルトガ島に住むエルドラゴの掌中にあるからである。<br />
+                            <br />
+                            <strong>僕の名はアラクニドと申す。昔は騎士であったが今は、海賊であり略奪行為を繰り返している・・・　<br />
+                            ところでニョア殿、たわいもない質問だが聞いてほしい。<br />
+                            ノクスやマタン、アンネースなどの人物の身長が知りたいのだが。<br />
+                            何歳の時でもいい、たのむぜ。<br />
+                            (海賊アラクニドより)</strong><br />
+                            <br />
+                            ノクス・マタンは共に君達の世界の単位で言えば、159cmという記述が残っている。<br />
+                            アンネースは彼らとほぼ同じで少しだけ高い程度かと思われるにゃ。<br />
+                            <br />
+                            <strong>ニョアさんZektbachさんはじめまして。この世界の音楽に一目惚れしてしまいました。<br />
+                            疑問なんですがそもそもニョアさんはどうしてしゃべれるのですか？ネコなのに…<br />
+                            (魔道士てぃあもより)</strong><br />
+                            <br />
+                            ここで同様の書簡に答えているので見てくれたまえ。<br />
+                            <br />
+                            <a href="http://bmf.i-revo.jp/zektbach/nyoa/nyoa_58.html">http://bmf.i-revo.jp/zektbach/nyoa/nyoa_58.html</a><br />
+                            <br />
+                            <br />
+                            <strong>はじめまして、ニョア殿。アリア・テ・ラリアの人物について貴殿に聞いておきたいことがある。<br />
+                            一つはクカルという人物についてだ。彼の過去について僅かでもいいので情報を提供してくれるとありがたい。<br />
+                            もう一つはギジリについてだ。最近では彼が味噌汁好きだという噂が流れているが....。<br />
+                            この二つの件に答えてくれないだろうか。<br />
+                            なお、この手紙にはカルカン二十個と鰹節五個を付けておいた。<br />
+                            それでは健闘を祈る。<br />
+                            (騎士逝月恋歌より)</strong><br />
+                            <br />
+                            私の手元にあるサザラギの機密文書を調べてみよう。<br />
+                            まず、クカルについて。<br />
+                            様々な記述が残っているが、一部だけ書こう。<br />
+                            クカルの幼少期はマシノワの様々な場所を転々としていたようである。<br />
+                            サザラギの文書をざっと見た限りでは、クカルはかなりの苦労人である。<br />
+                            その原因は母親が山神人で、父親が蛇神人という禁忌の子であり社会的に認められていないからである。<br />
+                            しかし、このような複雑な家庭環境の中でクカルは曲がらず真っすぐに育ったようで<br />
+                            サザラギの中ではむーどめいかーであったようである。<br />
+                            次にギジリについて。<br />
+                            残念ながら、味噌汁を好むという記述は全く見られなかった。<br />
+                            しかし、月下のもとに夜桜を眺めたり<br />
+                            マシノワの朝廷内での茶会で結構なお手前を披露していた所を見ると<br />
+                            文化人であり風流人でもあった事は間違いなさそうである。<br />
+                            <br />
+                            <strong>はじめまして！ニョア様！<br />
+                            自分はきゃぁーっとと申します。<br />
+                            実は、最近、私のいる国で「テスト」というものが行われてるのです・・・<br />
+                            がっっっ！！！<br />
+                            私はどうしてもやれる気になれません・・・<br />
+                            しかし、私の母は、やれやれとうるさいのです・・・<br />
+                            一体、どうすればよいと思いますか！？<br />
+                            私は母の言いなりのままじゃないといけないのですか！？<br />
+                            自分のやりたいようにやるには一体どうすれば・・・<br />
+                            (猫のきゃぁーっとより)</strong><br />
+                            <br />
+                            これは偉大なる企業家も語っていたことであるが、<br />
+                            <br />
+                            まず、君の人生の時間は限られている。無限ではない。これは絶対的に逆らえない事である。<br />
+                            大切なのは自分自身の内面の声であり、それを他人の意見でかきけされないようにすることである。<br />
+                            つまり、他者の考えた結果に人生の限られた時間を費やす必要は無い。<br />
+                            <br />
+                            この文章の意味をよく考えて、あらためてテストと自分について考えてみるにゃ。<br />
+                            <br />
+                            <strong>ニョアさま、初めまして。<br />
+                            以前紹介された『素数の音楽』を頑張って読んでいる魔道士見習いです。<br />
+                            読破したら『フェルマーの最終定理』も読もうと思います。<br />
+                            ところで、私は理科系のダイガクという所で勉強しているのですが、どうにも数学と仲良くなれません。<br />
+                            理系のダイガク生にとっては大変ピンチです。<br />
+                            サンカクカンスウさんやビブンセキブンさんがそっぽを向いたまま、<br />
+                            どうしても分かり合おうという姿勢を見せてくれないのです。<br />
+                            彼ら彼女ら、ひいては数学に親しみが持てるようなお勧めの書物はありませんか？<br />
+                            (魔道士ハツヒトより)</strong><br />
+                            <br />
+                            数学ガールシリーズはどうかにゃ？<br />
+                            なかなか新しいあぷろーちで数学を読み物として読める書物だと思う。<br />
+                            <br />
+                            <strong>ニョアさんこんにちは。<br />
+                            突然ですが、ニョアさんはいつも腕を組んだままですね。<br />
+                            たまには別のポーズに変えたりしないのですか？<br />
+                            というか、腕組したままでは貴方の肉球に触れません！<br />
+                            (枢密院ポール・ゴランノスより)</strong><br />
+                            <br />
+                            ポール・ゴランノスよ…残念ながら君はまだ修行が足りないようだ。<br />
+                            さあ、心の目を見開いてよく見てみたまえ！<br />
+                            私は、華麗なる剣舞を君に披露している時もあるし、お腹をぺろっと見せてくつろいでいる時もある。<br />
+                            肉球に触れる機会など、星の数ほどあったはずにゃ。<br />
+                            腕組している私しか見えないのは、貴殿のれべるがまだ足りないからである。<br />
+                            さっさとザッカドニア大森林でれべるあげをしてくるにゃ！<br />
+                            <br />
+                            <strong>はじめまして、リクウ・サツキともうします。<br />
+                            私はいまだ未熟な学びの徒ですが、今回の日本に置けるごたごたの中気づいたことがあります。<br />
+                            日常というものは壊れやすいといいますが、なんだかんだといって、どこまでも付きまとって来るものであるという<br />
+                            ことです。それについて、かの偉大なる先人Zektbach先生の意見をお聞かせいただけないでしょうか？<br />
+                            (学院生リクウ・サツキより)</strong><br />
+                            <br />
+                            自分から生まれてくるものを日常と捉えるか<br />
+                            自分が繋がっている環境全般を日常と捉えるか<br />
+                            変化を再生と捉えるのか、はたまた破壊と捉えるのか<br />
+                            全ては自分自身の内面の声で決める事である<br />
+                            時間は愚かしい程に素直であり、観測者の君によって何色にでも見えるのだから<br />
+                            <br />
+                            <strong>ニョア様、こんにちは。<br />
+                            アリア・テ・ラリアの歴史について調べていたのですが、<br />
+                            種族戦争の後のガルキア大陸にはノイグラード、アゼルガット、テラントア自然主義国以外にも国家があったのですか？<br />
+                            ほんの一部でもいいので知りたいです。<br />
+                            (学院生ななぱっちょより)</strong><br />
+                            <br />
+                            ガルキア大陸で歴史上確認されている種族戦争後の国家は、文献上ではその３つである。<br />
+                            神聖ノイグラード王国の前身はトリスアギオン教義団の各地の拠点<br />
+                            アゼルガット王国の前身はパナノーラを占拠したナセム族による都市国家<br />
+                            テラントア自然主義国は、元々は自由人が寄りそって出来た集落である。<br />
+                            しかし、これはノイグラード王国の文献によるもので、王国が未踏の場所の記述は無い。<br />
+                            ザッカドニア大森林の奥地、イゼルニア山脈の奥地、さらに奥地にある忘却の峡谷<br />
+                            これらは王国未踏の地であり、国家が存在した可能性もある。<br />
+                            しかし、逆に言えば、国家として大きいものであったのなら<br />
+                            どこかの時代でノイグラード王国と接触があったはずである。<br />
+                            その記述が無いということは…大きい国家があった可能性は極めて低いと言えるにゃ。<br />
+                            <br />
+                            <strong>Zektbach殿、ニョア殿、初めまして。<br />
+                            今年より、一召喚士として活躍させて頂くことになりましたシエルと申します。<br />
+                            さっそくですがお二方にお尋ねしたいことがあります。<br />
+                            私がまだ見習いとして学院にいた時に聞いた、"Macuilxochitl"という題名の音楽についてです。<br />
+                            聞けば聞くほど、この曲も騎士猫の剣舞によって生まれたものなのではないかと思うようになり、質問させて頂きました。<br />
+                            曲中のところどころにニョア殿のような華麗さ、<br />
+                            チャコル殿のような流麗さに似通ったものを感じますが真相はいかに・・・？<br />
+                            モヤモヤしながら私の相棒猫、ドルハダスのカギ尻尾をいじるばかりです。<br />
+                            何か知っていることがありましたら是非教えてください。よろしくお願いします。<br />
+                            (召喚士シエルより)</strong><br />
+                            <br />
+                            Macuilxochitl――マクイルショチトル。<br />
+                            私の持つ愛剣もマクイルショチトルと言う名前だにゃ。<br />
+                            つまりそういう事にゃ('ω`)<br />
+                            <br />
+                            <strong>私の名はシャルナイト。ある海賊船の船長に慕う者だ。<br />
+                            ところでニョア殿くだらない質問なんだが・・・。<br />
+                            てとろあさーでぃん？って美味なのか？<br />
+                            釣ってしまったんだがどう調理してよいか分からない。<br />
+                            美味しい食べ方ってあるのだろうか。<br />
+                            (海賊シャルナイトより)</strong><br />
+                            <br />
+                            君は海賊という事で、<br />
+                            荒くれの海賊達に好まれている、気合いの入る料理を紹介しよう。<br />
+                            <br />
+                            ■テトロアサーディン烈火風<br />
+                            <br />
+                            材料(4人分) テトロアサーディン…4匹 プリシュシュ…30粒ほど リーズぺリラ…8枚 岩塩…少々 パナン油…少々<br />
+                            <br />
+                            ①テトロアサーディンを三枚におろし、皮の面に軽く岩塩を振っておく<br />
+                            ②すり鉢にプリシュシュを入れ、ペースト状になるまで潰す。<br />
+                            　※ペースト状になったプリシュシュは辛味成分が倍増するので目に入らないように十分気を付ける。<br />
+                            ③身を上面にし、そこに②を満遍なく伸ばす<br />
+                            ④身を覆うようにリーズぺリラを巻き、端を細木で止めておく<br />
+                            ⑤鉄板をパナン油で熱し、④を並べて両面を焼く<br />
+                            ⑥こんがり焼き上がったら、器に盛って出来上がり<br />
+                            <br />
+                            <strong>はじめましてニョア様、Zektbach様。詩人のジューンと申します。<br />
+                            いきなりで申し訳ないのですが、最近更新が無いのでとても寂しいです（・ω・｀）<br />
+                            私はZektbach様が語る世界観に非常に興味を持ち、日々いろいろと考察したりしております。<br />
+                            それゆえ、ニョア様の手記の更新が最近あまりにも少ないと、なんだか切ないです。<br />
+                            忙しいところ無理なことを言ってしまいましたがほんの少しでも頭の片隅に置いといてもらえると光栄です。<br />
+                            (詩人ジューンより)</strong><br />
+                            <br />
+                            心配してくれてありがとにゃ。<br />
+                            なかなか更新ができず、姿を見せずにいて申し訳ない。<br />
+                            これからはついったーの方でも、元気な姿を見せるようにするのでよろしくにゃ！<br />
+                            <br />
+                            <strong>はじめましてZektbach様、ニョア様。<br />
+                            Ｓtoryで、アンネースの話が見つからないんですがどこにあるんですか？<br />
+                            (王族雪椿より)</strong><br />
+                            <br />
+                            地図の南西の端（左下）に存在する、孤島Fallarienをくりっくすると見れるにゃ！<br />
+                            <br />
+                            <strong>どうも、こんにちわ。<br />
+                            本体は動いているのに画面だけが消える現象で、本体が原因かと思ったら画面が原因だったです。<br />
+                            結果本体も画面も新品に買い換える羽目になったとです。<br />
+                            とにかく、今までパソコンが壊れていて見れなかったので、見れるようになってよかったです。<br />
+                            では本題の質問行きます。<br />
+                            「蛇神」のムービーとあらすじにも出てくるギジリの片思いの相手の女の子は誰ですか？<br />
+                            （『二度近寄らないで・・・、汚らわしいカガチの分際で。』と言い放ったあの子。典型的なヤマジジンのカガチヘのイメージ？）<br />
+                            父親がカガチに何か命令をしているので、身分の高い家柄の子だと思いますが。<br />
+                            (学院生コロナより)</strong><br />
+                            <br />
+                            彼女の名は、ミサクヤという。<br />
+                            ミサクヤは御神四家の１つコノハナ家のお嬢様である。<br />
+                            御神四家は、マシノワの頂点である天神の子に次ぐ地位を持つ非常に身分の高い家柄である。<br />
+                            彼女が住んでいるコノハナという地名も、代々コノハナ家の嫡流が居を構えている場所から由来していて<br />
+                            ミサクヤの家は当然、コノハナで一番位が高い家である。<br />
+                            <br />
+                            <strong>ニョア殿、オスティヌス殿ご機嫌麗しゅう。<br />
+                            先日我輩は積年の夢であったピアノを始めたのだが<br />
+                            Zektbach殿の調べはおろか右手と左手が見事なまでの対称性を持っており<br />
+                            演奏とは称せぬただ音を出すだけの心痛の日々を過ごしている。<br />
+                            やはり歳には勝てぬのか……。<br />
+                            ピアノといえば以前マタン様がピアノを弾かれている絵画を観たり<br />
+                            シャムシール様がウードを弾かれている文献を目にしたのだが<br />
+                            他の方々の楽器の腕前は如何なものだろうか？<br />
+                            個人的な予想ではΣ様はあの美しい御身でハープなど奏でていそうだし<br />
+                            アンネース嬢は荘厳なパイプオルガンがお似合いだと思う。<br />
+                            そしてもう一つ、光り輝く美しきΣ様の天の裁きを<br />
+                            この身に受けるにはどうすれば良いのか教えていただければ至極幸いである。<br />
+                            (薬師トヨより)</strong><br />
+                            <br />
+                            Σの天の裁きで身を芯まで焦がしてみたいなど、君はなかなか特殊な感性を持った方である。<br />
+                            シャムシールがウードを好んで弾いていた事はよく知られている。<br />
+                            マタンが鍵盤楽器を弾くというのは、ハッキリした記述は無いがトリスアギオニドの教えにより幼き頃に身に付いたとは想像できる。<br />
+                            他の者達が楽器を弾けるかどうかは、残念ながら私には分からないが<br />
+                            少なくともリアンは音に対する知識も深かったと言われているので、彼は楽器を弾きこなす事が出来たに違いないにゃ。<br />
+                            <br />
+                            <strong>bueno, junto con saludarlo, lamento el no <br />
+                            poder habalr japones. Pero solo escribo para <br />
+                            felicitar por el dvd de masinowa, muy <br />
+                            genial. ah!, y tambien para preguntar porque <br />
+                            hay partes del mapa en que no sale nada<br />
+                            (rojo) yo pense que podia parte ser <br />
+                            masinowa, quiero saber gracias por leer.<br />
+                            (troyanoより)</strong><br />
+                            <br />
+                            ¿Este español es?<br />
+                            Gracias por oír el mashinowa<br />
+                            Todavía La épica de zektbach que le agradece de antemano.<br />
+                            <br />
+                            <strong>お部屋の精霊アトラ・ジン・ラピでございます、初めまして。<br />
+                            いきなりですが、物知りなニョア先生に質問です！<br />
+                            トゥーリの東に、縦に三つ、お行儀よく並んだでかい島（ひょっとしたら、大陸かもしれないけれども）<br />
+                            が浮かんでいるのですが、あれは一体、なんという名でしょうか。<br />
+                            あと、ギジリで有名なマシノワは、だいたいどのあたりですか？<br />
+                            (精霊アトラ・ジン・ラピより)</strong><br />
+                            <br />
+                            それこそ、マシノワがあるエジーク大陸だにゃ。<br />
+                            マシノワがあったのは一番北にある部分、真ん中はエンカムイ、一番下にはガデナの国家ダリシアンがそれぞれ存在していた。<br />
+                            <br />
+                            <strong>ごきげんよう、ニョア様、Zektbach様。<br />
+                            私は詩人でありながら楽師の勉強も嗜んでおります。そして少しの踊りも。<br />
+                            将来は音楽の盛んな国を作り、皆に伝えていきたいと考えております。<br />
+                            ただ、現在の我が楽団は4人……。<br />
+                            そんな大きなことを成し遂げられる自信を皆は無くしているのです。<br />
+                            そこでニョア様、Zektbach様。<br />
+                            私共に何かお言葉をくださいませぬでしょうか？<br />
+                            (詩人ジョーカーより)</strong><br />
+                            <br />
+                            ４人いれば十分にゃ！<br />
+                            名作であったあーるぴーじーをみたまえ、ぱーてぃーは４人が基本だったはずにゃ！<br />
+                            国ができたら、私も華麗なる剣舞を披露しに行くにゃ。<br />
+                            頑張ってくれたまえ！<br />
+                            <br />
+                            <strong>ニョアさんこんにちは。長い間旅を続けておられますが、暇をもてあましてはいませんか？<br />
+                            そこで、私が愛用している「すりっぱ」というものを差し上げます。<br />
+                            「じんこうひかく」という軟らかめの素材でできているので噛み心地がとてもよく、暇潰しには適していると思います。<br />
+                            (猫のダイダイより)</strong><br />
+                            <br />
+                            どれどれ、試してみようではないか…<br />
+                            <br />
+                            ( * )´ω`) はむはむかみかみ<br />
+                            <br />
+                            はんほ！<br />
+                            こへは！はみほほひが、ひひにゃ！<br />
+                            おひふはい、かんひゃする！<br />
+                            <br />
+                            <strong>はじめましてニョアさん。<br />
+                            私は精霊のアナスタシアと申しますの。<br />
+                            ちなみにアナスタシアとは「復活の花」と言う意味ですの。<br />
+                            素敵でしょう？<br />
+                            (精霊アナスタシアより)</strong><br />
+                            <br />
+                            素敵だにゃ！<br />
+                            行きたいにゃ　君のうでのなか<br />
+                            <br />
+                            <strong>拝啓 ニョア様<br />
+                            私め 学を修めるためにノイグラードにやってきたのですが<br />
+                            ここ最近風邪をひいてしまい鼻水が止まらないのです<br />
+                            しかし学生たるもの静かな図書館で延々と鼻をすするわけにはいきません<br />
+                            ですので私は故郷の「ヤクゼン」をこちらでも実践してみようと思います<br />
+                            そこでアリアテラリアいちの物知りであろうニョア様にお聞きしたいのですが<br />
+                            ノイグラードの温かい汁物等で何か薬効のあるものはありますでしょうか<br />
+                            カルカンのはまぐり味を添えておきます<br />
+                            かしこ<br />
+                            (学院生kisaragiより)</strong><br />
+                            <br />
+                            薬膳と言えば、<br />
+                            ノイグラードには王国が推奨する、ムイ茶葉にラタキアカクタス、お宿り草、ジャマリアの乾燥粉末を一定の比率で配合し小袋に入れ、<br />
+                            お湯で戻して飲むノイグラード王国滋養健康促進美茶というものが存在する。<br />
+                            これは風邪、腹痛、腰痛、頭痛等、程度の軽い病気ならばすぐに効果があるので重宝され<br />
+                            オウケンビチャという愛称で広く親しまれている。<br />
+                            ちなみにこの茶の開発者はルーヘン・ケンプフェルトである。<br />
+                            <br />
+                            <strong>はじめまして、私シャーリーと申します。<br />
+                            それにしても、ニョア様の手記もだいぶたまりましたね。<br />
+                            途中からなので最初から読むのがたいへ（ｒｙ＝<br />
+                            話は変わりますが、質問です。<br />
+                            「交差する～」であの2人、対峙していましたよね。<br />
+                            それってやっぱりリスタチア対星。　ということでいいのでしょうか・・？<br />
+                            (騎士シャーリーより)</strong><br />
+                            <br />
+                            <br />
+                            だいたいあってるにゃ。<br />
+                            <br />
+                            では、今回はこの辺でさらばにゃ！<br />
+                            <br />
+                            <br /><br /><br /><br />
+</p>
+                    </div>
+                </div>
+            </div>
+            <!--bottomMenu-->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <footer id="mainFooter">
+                        <div class="newsBox"><a href="http://www.konamistyle.jp/sp/zektbach_2nd/"><img
+                                    src="img/bnr_album.gif" alt="The Epic of Zektbach -FRAGMENTS OF ARIA TE'LARIA-"></a>
+                        </div>
+                        <div class="alignRight">
+                            <p>Music <span id="musicOn" class="active">On</span>/<span id="musicOff">Off</span></p>
+                            <p style="font-size:10px;">©2021 Konami Digital Entertainment ©2021 Internet Revolution</p>
+                        </div>
+
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <script type="text/javascript" src="js/mainJS.js"></script>
+</body>
+
 </html>

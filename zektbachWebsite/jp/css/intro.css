@@ -1,6 +1,14 @@
 .part {
+  padding: 1vw 0;
+  margin: 0;
   position: relative;
   vertical-align: middle;
+}
+.part img:nth-child(2) {
+  margin: 2%;
+}
+.part img:nth-child(3) {
+  padding: 1%;
 }
 
 .part:before {
